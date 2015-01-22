@@ -6,6 +6,9 @@ repositories {
 }
 
 dependencies {
+	compile(
+		'org.projectlombok:lombok:1.+'
+	)
 	testCompile(
 		'junit:junit:4.+'
 	)
