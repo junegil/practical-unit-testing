@@ -7,7 +7,8 @@ repositories {
 
 dependencies {
 	compile(
-		'org.projectlombok:lombok:1.+'
+		'org.projectlombok:lombok:1.+',
+		'com.google.guava:guava:18.+'
 	)
 	testCompile(
 		'junit:junit:4.+',
