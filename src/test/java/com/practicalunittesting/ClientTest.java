@@ -1,5 +1,6 @@
 package com.practicalunittesting;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -9,7 +10,12 @@ public class ClientTest {
 
   private Address addressA = new Address("streetA");
   private Address addressB = new Address("streetB");
-  private Client client = new Client();
+  private Client client;
+
+  @Before
+  public void setUp() {
+    client = new Client();
+  }
 
   @Test
   public void afterCreationShouldHaveNoAddress() {

@@ -1,16 +1,16 @@
 package com.practicalunittesting;
 
+import com.google.common.collect.Lists;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @NoArgsConstructor
 public class Client {
 
   @Getter
-  private final List<Address> addresses = new ArrayList<>();
+  private final List<Address> addresses = Lists.newArrayList();
 
   public void addAddress(final Address address) {
     this.addresses.add(address);
