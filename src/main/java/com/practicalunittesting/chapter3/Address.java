@@ -1,4 +1,4 @@
-package com.practicalunittesting;
+package com.practicalunittesting.chapter3;
 
 import lombok.Data;
 import lombok.NonNull;

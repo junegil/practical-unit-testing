@@ -1,4 +1,4 @@
-package com.practicalunittesting;
+package com.practicalunittesting.chapter3;
 
 import com.google.common.collect.Lists;
 import lombok.Getter;
