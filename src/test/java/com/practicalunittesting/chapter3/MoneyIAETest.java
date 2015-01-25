@@ -10,14 +10,14 @@ import static junitparams.JUnitParamsRunner.$;
 @RunWith(JUnitParamsRunner.class)
 public class MoneyIAETest {
 
-  private final static int VALID_AMOUNT = 5;
-  private final static String VALID_CURRENCY = "USD";
+  private static final int VALID_AMOUNT = 5;
+  private static final String VALID_CURRENCY = "USD";
 
-  private static final Object[] getInvalidAmount() {
+  private Object[] getInvalidAmount() {
     return $(
-      $(-12387),
-      $(-5),
-      $(-1)
+      -12387,
+      -5,
+      -1
     );
   }
 
@@ -27,10 +27,10 @@ public class MoneyIAETest {
     new Money(invalidAmount, VALID_CURRENCY);
   }
 
-  private static final Object[] getInvalidCurrency() {
+  private Object[] getInvalidCurrency() {
     return $(
-      $(null),
-      $("")
+      null,
+      ""
     );
   }
 
