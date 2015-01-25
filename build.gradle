@@ -12,6 +12,7 @@ dependencies {
 	)
 	testCompile(
 		'junit:junit:4.+',
+		'org.mockito:mockito-core:1.+',
 		'pl.pragmatists:JUnitParams:1.+'
 	)
 }
